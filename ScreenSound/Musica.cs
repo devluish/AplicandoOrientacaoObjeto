@@ -1,9 +1,38 @@
-﻿class Musica
+﻿using System.Collections.Concurrent;
+
+class Musica
 {
-    public string nome;
-    public string artista;
-    public int duracao;
-    public bool disponivel;
+    // Quando faz a utilização do get e set precisa padronizar a nomenclatura para Pascal
+
+    public string Nome {  get; set; }
+    public string Artista { get; set; }
+    public int Duracao { get; set; }
+    public bool Disponivel { get; set; }
+    // Lambda utilizando arrow function - Pertence somente ao GET "MODO LEITURA"
+    public string DescricaoResumida => $"A música {Nome} pertence à banda {Artista}";
+    //{
+    //    get
+    //    {
+    //        return $"A música {Nome} pertence à banda {Artista}";
+    //    }
+    //} // Atalho prop
+
+
+    public void ExibirFichaTecnica()
+    {
+        Console.WriteLine($"Nome: {Nome}");
+        Console.WriteLine($"Artista: {Artista}");
+        Console.WriteLine($"Duração: {Duracao}");
+
+        if (Disponivel)
+        {
+            Console.WriteLine("Disponível no plano");
+        }
+        else
+        {
+            Console.WriteLine("Adquira o plano plus+");
+        }
+    }
 }
 
 

@@ -1,15 +1,18 @@
 ﻿// Curso C#: Aplicando a Orientação a Objeto
 
 Musica musica1 = new Musica();
-musica1.nome = "Smile";
-musica1.artista = "Ed Motta";
-
-Console.WriteLine($"Nome: {musica1.nome}");
-Console.WriteLine($"Artista: {musica1.artista}"); 
+musica1.Nome = "Smile";
+musica1.Artista = "Ed Motta";
+musica1.Duracao = 273;
+musica1.Disponivel = true;
+Console.WriteLine(musica1);
 
 Musica musica2 = new Musica();
-musica2.nome = "Vertigo";
-musica2.artista = "U2";
+musica2.Nome = "Vertigo";
+musica2.Artista = "U2";
+musica2.Duracao = 313;
+musica2.Disponivel = false;   
 
-Console.WriteLine($"Nome: {musica2.nome}");
-Console.WriteLine($"Artista: {musica2.artista}");
+musica1.ExibirFichaTecnica();
+musica2.ExibirFichaTecnica();
+
