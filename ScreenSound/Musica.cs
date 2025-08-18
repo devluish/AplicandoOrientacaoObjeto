@@ -1,5 +1,6 @@
 ﻿using System.Collections.Concurrent;
 
+// Classe que contém a definição (Atributos + Métodos)
 class Musica
 {
     // Quando faz a utilização do get e set precisa padronizar a nomenclatura para Pascal

@@ -1,5 +1,7 @@
 ﻿// Curso C#: Aplicando a Orientação a Objeto
 
+// Classe que contém a execução: Cria objetos( musica1, musica2) e atribui valores e chama métodos.
+
 Musica musica1 = new Musica();
 musica1.Nome = "Smile";
 musica1.Artista = "Ed Motta";
