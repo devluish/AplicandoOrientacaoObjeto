@@ -9,6 +9,10 @@ class Musica
     public string Artista { get; set; }
     public int Duracao { get; set; }
     public bool Disponivel { get; set; }
+
+    // Estudar esse formato onde pegou o Genero da classe genero
+    // Refazer
+    public Genero Genero { get; set; }
     // Lambda utilizando arrow function - Pertence somente ao GET "MODO LEITURA"
     public string DescricaoResumida => $"A música {Nome} pertence à banda {Artista}";
     //{
