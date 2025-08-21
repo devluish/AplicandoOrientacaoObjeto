@@ -11,7 +11,7 @@ class Musica
     public bool Disponivel { get; set; }
 
     // Estudar esse formato onde pegou o Genero da classe genero
-    // Refazer
+  
     public Genero Genero { get; set; }
     // Lambda utilizando arrow function - Pertence somente ao GET "MODO LEITURA"
     public string DescricaoResumida => $"A música {Nome} pertence à banda {Artista}";
@@ -21,7 +21,6 @@ class Musica
     //        return $"A música {Nome} pertence à banda {Artista}";
     //    }
     //} // Atalho prop
-
 
     public void ExibirFichaTecnica()
     {

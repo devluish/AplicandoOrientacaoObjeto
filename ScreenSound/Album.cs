@@ -3,7 +3,6 @@
     // Campo privado -> Essa variável só está disponivel na classe Album
     private List<Musica> musicas = new List<Musica>();
     public string Nome { get; set; }
-
     public int DuracaoTotal => musicas.Sum(m => m.Duracao); // Para cada música eu quero saber a duração
     public void AdicionarMusica(Musica musica)
     {
