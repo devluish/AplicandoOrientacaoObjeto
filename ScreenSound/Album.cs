@@ -1,5 +1,6 @@
 ﻿class Album
 {
+
     // Campo privado -> Essa variável só está disponivel na classe Album
     private List<Musica> musicas = new List<Musica>();
     public string Nome { get; set; }
