@@ -14,7 +14,8 @@ class Musica
   
     public Genero Genero { get; set; }
     // Lambda utilizando arrow function - Pertence somente ao GET "MODO LEITURA"
-    public string DescricaoResumida => $"A música {Nome} pertence à banda {Artista}";
+    public string DescricaoResumida => 
+        $"A música {Nome} pertence à banda {Artista}";
     //{
     //    get
     //    {
