@@ -1,8 +1,15 @@
 ﻿class Banda
 {
-    
-    private List<Album> albums = new List<Album>(); 
-    public string Nome {  get; set; }
+    private List<Album> albums = new List<Album>();
+
+
+    public Banda(string nome)
+    {
+        Nome = nome;
+    }
+
+    // Quando coloca somente opção de leitura você precisa inicializar o valor no construturo ou fornecer um valor.
+    public string Nome {  get; }
     
 
     public void AdicionarAlbum(Album album)
