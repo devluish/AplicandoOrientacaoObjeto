@@ -4,6 +4,11 @@
 class Musica
 {
     // Construtor -> Caracteristica: Não tem retorno (O nome dele é o tipo) 
+    // O construtor deve ter o mesmo nome da classe!
+    // Usar um construtor auxilia na inicialização dos estados.
+    // Usar um construtor facilita o uso dos objetos.
+    // Usar um construtor auxilia nos dados de entrada das instâncias.
+
     public Musica(Banda artista, string nome)
     {
         Artista = artista;
